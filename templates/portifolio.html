@@ -7,6 +7,7 @@
     <title>Portfólio de Programador</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
         body {
@@ -85,18 +86,74 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tabela de Projetos -->
+            <table class="table table-striped mt-4">
+                <thead>
+                    <tr>
+                        <th>Nome do Projeto</th>
+                        <th>Descrição</th>
+                        <th>Tecnologias Usadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Projeto A</td>
+                        <td>Gerenciamento de Estoque</td>
+                        <td>Visual Studio, SQL Server, C#</td>
+                    </tr>
+                    <tr>
+                        <td>Projeto B</td>
+                        <td>Calculadora de Churrasco</td>
+                        <td>Android, Java</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- Seção Contato -->
         <section class="section" id="contact">
             <h2 class="text-center">Contato</h2>
-            <p class="text-center">Entre em contato comigo através de:</p>
+            <p class="text-center">Entre em contato comigo através do formulário abaixo:</p>
+            <form class="text-center">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem aqui" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <p class="text-center mt-4">Ou entre em contato através de:</p>
             <ul class="list-unstyled text-center">
-                <li>Email: rhainerhenriquesilva@gmail.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/rhainer-henrique-silva-74139623b/">linkedin.com/RhainerHenrique</a></li>
-                <li>GitHub: <a href="https://github.com/RaiderHs">github.com/RaiderHs</a></li>
+                <li><i class="bi bi-envelope"></i> Email: rhainerhenriquesilva@gmail.com</li>
+                <li><i class="bi bi-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/rhainer-henrique-silva-74139623b/">linkedin.com/RhainerHenrique</a></li>
+                <li><i class="bi bi-github"></i> GitHub: <a href="https://github.com/RaiderHs">github.com/RaiderHs</a></li>
+            </ul>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section class="section" id="skills">
+            <h2 class="text-center">Habilidades</h2>
+            <ul class="list-group">
+                <li class="list-group-item">C++</li>
+                <li class="list-group-item">C#</li>
+                <li class="list-group-item">SQL</li>
+                <li class="list-group-item">Python</li>
             </ul>
         </section>
     </div>
 
-    <
+    <footer>
+        <p>&copy; 2024 Rhainer H. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
